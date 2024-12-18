@@ -1,6 +1,6 @@
 ## Tommie's Bio Website
 
-Tommie'd Bio Website was created using a CSS Background Animation and a CSS Border Animation. 
+Tommie's Bio Website was created using a CSS Background Animation and a CSS Border Animation. 
 
 Credits:
 
