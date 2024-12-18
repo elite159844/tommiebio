@@ -8,4 +8,4 @@ https://www.youtube.com/@coding2go
 
 https://www.youtube.com/@OnlineTutorialsYT
 
-Please note that i do not take credit for the css animations. 
+Please Note that I do not take credit for the CSS Animations.
