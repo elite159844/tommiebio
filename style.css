@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+html{
+  font-family: Poppins;
+  color: #f0f0f0;
+
+}
+body{
+  min-height: 100vh;
+  background: #0b0d15;
+  color: #a2a5b3;
+  align-content: center;
+  overflow: hidden;
+}
+  .star
+  {
+      position: absolute;
+      top: -20px;
+      color: #fff;
+      animation: animate 5s linear forwards;
+  }
+  
+  .star::before
+  {
+      content: '\f043';
+      font-family: fontAwesome;
+      text-shadow: 0 0 5px #fff,
+      0 0 20px #fff,
+      0 0 50px #fff;
+  }
+  @keyframes animate
+  {
+      0%
+      {
+          transform: translateY(-10vh) rotate(0deg);
+          opacity: 1;
+      }
+      80%
+      {
+          opacity: 1;
+      }
+      100%
+      {
+          transform: translateY(275vh) rotate(0deg);
+          opacity: 0;
+      }
+  }
+h1{
+  color: white;
+}
+.card{
+  margin: 0 auto;
+  padding: 2em;
+  width: 300px;
+  background: #1c1f2b;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after, .card::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #000000, #e4e9e7, #404142, #c0babe, #f3eeee);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.card::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: arial;
+  font-size: 17px;
+}
+img {
+  width: 55px; /* the height will scale proportionally */
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
