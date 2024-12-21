@@ -102,11 +102,14 @@ p {
   font-size: 17px;
 }
 img {
-  width: 55px; /* the height will scale proportionally */
+  width: 55px; 
   border-radius: 50%;
+  margin: 8px;
 }
-
-
+.image-row {
+  display: flex;
+  justify-content: space-between; 
+}
 
 
 
