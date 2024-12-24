@@ -24,7 +24,7 @@ body{
 
 .star::before
 {
-    content: '\f005';
+    content: '\f043';
     font-family: fontAwesome;
     text-shadow: 0 0 5px #fff,
     0 0 20px #fff,
