@@ -36,20 +36,20 @@ body{
       {
           transform: translateY(-10vh) rotate(0deg);
           opacity: 1;
-          will-change: transform;
+          will-change: filter;
 
       }
       80%
       {
           opacity: 1;
-          will-change: transform;
+          will-change: filter;
 
       }
       100%
       {
           transform: translateY(275vh) rotate(0deg);
           opacity: 0;
-          will-change: transform;
+          will-change: filter;
 
       }
   }
@@ -116,7 +116,6 @@ img {
   display: flex;
   justify-content: space-between; 
 }
-
 
 
 
