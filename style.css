@@ -14,45 +14,39 @@ body{
   align-content: center;
   overflow: hidden;
 }
-  .star
-  {
-      position: absolute;
-      top: -20px;
-      color: #fff;
-      animation: animate 5s linear forwards;
-  }
-  
-  .star::before
-  {
-      content: '\f043';
-      font-family: fontAwesome;
-      text-shadow: 0 0 5px #fff,
-      0 0 20px #fff,
-      0 0 50px #fff;
-  }
-  @keyframes animate
-  {
-      0%
-      {
-          transform: translateY(-10vh) rotate(0deg);
-          opacity: 1;
-          will-change: transform;
+.star
+{
+    position: absolute;
+    top: -20px;
+    color: #fff;
+    animation: animate 5s linear forwards;
+}
 
-      }
-      80%
-      {
-          opacity: 1;
-          will-change: transform;
-
-      }
-      100%
-      {
-          transform: translateY(275vh) rotate(0deg);
-          opacity: 0;
-          will-change: transform;
-
-      }
-  }
+.star::before
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    text-shadow: 0 0 5px #fff,
+    0 0 20px #fff,
+    0 0 50px #fff;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 1;
+    }
+    80%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(275vh) rotate(360deg);
+        opacity: 0;
+    }
+}
 h1{
   color: white;
 }
