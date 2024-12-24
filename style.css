@@ -36,15 +36,21 @@ body{
       {
           transform: translateY(-10vh) rotate(0deg);
           opacity: 1;
+          will-change: transform;
+
       }
       80%
       {
           opacity: 1;
+          will-change: transform;
+
       }
       100%
       {
           transform: translateY(275vh) rotate(0deg);
           opacity: 0;
+          will-change: transform;
+
       }
   }
 h1{
