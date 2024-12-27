@@ -78,7 +78,6 @@ h1{
   z-index: -1;
   padding: 3px;
   border-radius: 10px;
-  animation: 3s spin linear infinite;
 }
 .card::before{
   filter: blur(1.5rem);
